@@ -1,0 +1,20 @@
+title: my m6no5
+description: >-
+  Learning Lab doesn't have anything for public int describeContents() { return
+  0; } public void writeToParcel(Parcel out, int flags) { out.writeInt(mData); }
+  public static final Parcelable.Creator<MyParcelable> CREATOR = new
+  Parcelable.Creator<MyParcelable
+template:
+  repo: my-m6no5-template
+  name: my-m6no5
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
